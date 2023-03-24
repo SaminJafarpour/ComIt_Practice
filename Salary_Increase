@@ -1,0 +1,10 @@
+''' - Make the program in Python such that given as a worker's salary, apply a 15% increase
+if your salary is less than $1000 and 12% otherwise. Print the new salary of the worker.
+Fact: SUE (variable of real type that represents the salary of the worker). '''
+
+salary=int(input("how much is the worker's salary? "))
+if salary<1000:
+    new_salary=salary+(salary*0.15)
+else:
+    new_salary=salary+(salary*0.12)
+print(f"the worker's new salary is: {new_salary}")
