@@ -1,0 +1,9 @@
+'''Write a program in Python that
+converts from canadian dollars to US dollars. You will receive a decimal number corresponding
+to the amount in CAD and will answer with the corresponding amount in US dollars'''
+#the exchanging rate of CAD to USD is 0.73 
+#getting an input from user
+cad=input("tell me the amount of CAD you would like to exchange to USD ")
+#converting CAD to USD
+usd=int(cad)*0.73
+print(f"you have {usd} in USD")
