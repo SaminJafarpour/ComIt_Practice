@@ -1,0 +1,12 @@
+'''Write a program in Python that reads two numbers on the keyboard and say which 
+is the largest and which is the smallest'''
+#getting two inputs to compare
+first=input("tell me the first number to compare ")
+second=input("tell me the second number to compare ")
+#Comparing two numbers
+if first>second:
+    print(f"{first} is the biggest number")
+elif second>first:
+    print(f"{second} is the biggest number")
+else:
+    print(f"{first} and {second} are equal")
