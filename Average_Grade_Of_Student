@@ -3,7 +3,7 @@ Print the enrolment, the average and the word "approved" if the student has an a
 than or equal to 6, and the word "not approved" otherwise. Data: MAT, CAL1, CAL2, CAL3, CAL4,
 CAL5 Where: MAT is an integer variable that represents the student's enrolment. CAL1, CAL2,
 CAL3, CAL4 and CAL5 are real-type variables representing the student's 5 grades.'''
-
+#Declaring a function to calculate the average
 def grade_average(MAT,CAL1,CAL2,CAL3,CAL4,CAL5):
     print(MAT)
     average=(CAL1+CAL2+CAL3+CAL4+CAL5)/5
@@ -13,4 +13,5 @@ def grade_average(MAT,CAL1,CAL2,CAL3,CAL4,CAL5):
     else:
         print("not approved")
 
+#invoking the function
 grade_average(10,4,5,7,8,9)
