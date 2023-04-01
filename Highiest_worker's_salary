@@ -1,0 +1,12 @@
+'''Make a program that asks for the salary of N workers (first you must
+ask how many workers there are) and print the one with the highest salary'''
+#asking for the number of workers
+number_of_workers=int(input("how many workers are there?"))
+#defining a list
+list_of_salaries=[]
+#iterating through the list to get and save the worker's salary
+for i in range(0,number_of_workers):
+    i=input(f"how much is the worker number {i} salary?") 
+    list_of_salaries.append(i)
+#geting the worker with highest salary
+print(max(list_of_salaries))
