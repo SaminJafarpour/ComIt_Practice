@@ -1,14 +1,14 @@
 class Vehicle:
     """various kinds of vehicles are built with this class"""
-    def __init__(self, kind:str, price:int, VAT:int=0):
+    def __init__(self, kind:str, price:int, vat:int=0):
         self.kind=kind
         self.price=price
-        self.VAT=VAT
+        self.vat=vat
         if price>100000000:
-            self.VAT=0.20*100000000
+            self.vat=0.20*100000000
         else:
-            self.VAT=0.16*100000000
-        print(f"VAT for this car is: {self.VAT}")
+            self.vat=0.16*100000000
+        print(f"VAT for this car is: {self.vat}")
     def calculating_final_value(self,final_value)->None:
         '''writing a method to calculate if vehicle is eligible for final discount
         '''
@@ -19,10 +19,10 @@ class Vehicle:
             print(f"eligible for additional discount of 5% and the final price is {self.final_value-additional_discount}")
         else:
             print("your vehicle is not eligible for any discount")
-"""building objects"""
 type1=Vehicle("family_cars",75000000)
+"""building objects"""
 if type1.price<=50000000:
-    primery_discount=0.5*type1.VAT
+    primery_discount=0.5*type1.vat
     print(f"this vehicle is eligible for {primery_discount} discount")
 else:
     primery_discount=0
